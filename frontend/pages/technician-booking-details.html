@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Repair Details | Technician | 1ZED TechFix
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a
+            href="technician-dashboard.html"
+            class="logo"
+        >
+            1<span class="logo-zed">ZED</span>
+            <span class="logo-techfix">TechFix</span>
+        </a>
+
+
+        <div class="nav-actions">
+
+            <a
+                href="technician-dashboard.html"
+                class="btn btn-primary"
+            >
+                Back to Dashboard
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="dashboard-page">
+
+    <section class="dashboard-container">
+
+
+        <!-- PAGE WELCOME -->
+
+        <div class="dashboard-welcome">
+
+            <div>
+
+                <span class="dashboard-badge">
+                    Repair Management
+                </span>
+
+                <h1>
+                    Repair Details
+                </h1>
+
+                <p>
+                    View the complete information for this assigned repair.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOKING DETAILS -->
+
+        <section class="dashboard-section">
+
+            <div
+                id="technicianBookingDetails"
+                class="recent-bookings"
+            >
+                <div class="empty-bookings">
+
+                    <div class="empty-icon">
+                        🔧
+                    </div>
+
+                    <h3>
+                        Loading repair...
+                    </h3>
+
+                    <p>
+                        Please wait while we load the repair details.
+                    </p>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section
+            id="repairInformationSection"
+            class="dashboard-section"
+            style="display: none;"
+        >
+
+            <div class="dashboard-section-heading">
+
+                <div>
+
+                    <span class="dashboard-badge">
+                        Repair Information
+                    </span>
+
+                    <h2>
+                        Record Repair Details
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <form id="repairInformationForm">
+
+                <div class="form-group">
+
+                    <label for="diagnosis">
+                        Diagnosis
+                    </label>
+
+                    <textarea
+                        id="diagnosis"
+                        name="diagnosis"
+                        rows="4"
+                        placeholder="Describe the problem you found..."
+                    ></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="repairNotes">
+                        Repair Notes
+                    </label>
+
+                    <textarea
+                        id="repairNotes"
+                        name="repairNotes"
+                        rows="4"
+                        placeholder="Describe the repair work performed..."
+                    ></textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="partsUsed">
+                        Parts Used
+                    </label>
+
+                    <textarea
+                        id="partsUsed"
+                        name="partsUsed"
+                        rows="3"
+                        placeholder="List any parts used during the repair..."
+                    ></textarea>
+
+                </div>
+
+                <button
+                    type="submit"
+                    id="saveRepairInformationButton"
+                    class="btn btn-primary"
+                >
+                    Save Repair Information
+                </button>
+
+            </form>
+
+        </section>
+
+</main>
+
+
+<script src="../js/technicianBookingDetails.js"></script>
+
+</body>
+
+</html>

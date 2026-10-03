@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Dashboard | 1ZED TechFix</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="../index.html" class="logo">
+                1<span class="logo-zed">ZED</span>
+                <span class="logo-techfix">TechFix</span>
+            </a>
+
+            <div class="nav-actions">
+
+                <button
+                    type="button"
+                    id="logoutButton"
+                    class="btn btn-primary"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         DASHBOARD
+    ========================================== -->
+
+    <main class="dashboard-page">
+
+        <section class="dashboard-container">
+
+            <!-- Welcome -->
+
+            <div class="dashboard-welcome">
+
+                <div>
+
+                    <span class="dashboard-badge">
+                        Customer Dashboard
+                    </span>
+
+                    <h1>
+                        Welcome, <span id="customerName">Customer</span> 👋
+                        <span id="customerEmail"></span>
+                    </h1>
+
+                
+                    <p>
+                        Manage your repair bookings and track your
+                        device service progress.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Dashboard Cards -->
+
+            <div class="dashboard-cards">
+
+                <div class="dashboard-card">
+
+                    <div class="dashboard-card-icon">
+                        🔧
+                    </div>
+
+                    <h2>Book a Repair</h2>
+
+                    <p>
+                        Request a technician to diagnose and repair
+                        your device.
+                    </p>
+
+                    <a
+                        href="book-repair.html"
+                        class="btn btn-primary"
+                    >
+                        Book Repair
+                    </a>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="dashboard-card-icon">
+                        📋
+                    </div>
+
+                    <h2>My Bookings</h2>
+
+                    <p>
+                        View your repair requests and their current
+                        status.
+                    </p>
+
+                    <a
+                        href="my-bookings.html"
+                        class="btn btn-primary"
+                    >
+                        View Bookings
+                    </a>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="dashboard-card-icon">
+                        📈
+                    </div>
+
+                    <h2>Repair Status</h2>
+
+                    <p>
+                        Keep track of your device repair progress.
+                    </p>
+
+                    <button
+                        type="button"
+                        id="trackRepairButton"
+                        class="btn btn-primary"
+                    >
+                        Track Repair
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recent Bookings -->
+
+            <section class="dashboard-section">
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-badge">
+                            Activity
+                        </span>
+
+                        <h2>Recent Bookings</h2>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="recentBookings"
+                    class="recent-bookings"
+                >
+
+                    <div class="empty-bookings">
+
+                        <div class="empty-icon">
+                            📋
+                        </div>
+
+                        <h3>No bookings yet</h3>
+
+                        <p>
+                            Your repair bookings will appear here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../js/customerDashboard.js"></script>
+
+</body>
+</html>

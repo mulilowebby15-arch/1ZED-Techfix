@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | 1ZED TechFix</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="../index.html" class="logo">
+            1<span class="logo-zed">ZED</span>
+            <span class="logo-techfix">TechFix</span>
+        </a>
+
+        <div class="nav-actions">
+
+            <button
+                type="button"
+                id="logoutButton"
+                class="btn btn-primary"
+            >
+                Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<main class="dashboard-page">
+
+    <section class="dashboard-container">
+
+        <div class="dashboard-welcome">
+
+            <div>
+
+                <span class="dashboard-badge">
+                    Admin Dashboard
+                </span>
+
+                <h1>
+                    Welcome, <span id="adminName">Admin</span> 👋
+                </h1>
+
+                <p>
+                    Manage repair bookings, customers and technicians
+                    from one place.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- DASHBOARD SUMMARY -->
+
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-card-icon">
+                    📋
+                </div>
+
+                <h2>
+                    Total Bookings
+                </h2>
+
+                <p id="totalBookings">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-card-icon">
+                    👨‍🔧
+                </div>
+
+                <h2>
+                    Technicians
+                </h2>
+
+                <p id="totalTechnicians">
+                    0
+                </p>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-card-icon">
+                    👥
+                </div>
+
+                <h2>
+                    Customers
+                </h2>
+
+                <p id="totalCustomers">
+                    0
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- RECENT BOOKINGS -->
+
+        <section class="dashboard-section">
+
+            <div class="dashboard-section-heading">
+
+                <div>
+
+                    <span class="dashboard-badge">
+                        Booking Management
+                    </span>
+
+                    <h2>
+                        Recent Bookings
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="adminBookings"
+                class="recent-bookings"
+            >
+
+                <div class="empty-bookings">
+
+                    <div class="empty-icon">
+                        📋
+                    </div>
+
+                    <h3>
+                        Loading bookings...
+                    </h3>
+
+                    <p>
+                        Please wait while we load the bookings.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+
+
+<script src="../js/adminDashboard.js"></script>
+
+</body>
+
+</html>

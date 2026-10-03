@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking Details | 1ZED TechFix</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="customer-dashboard.html" class="logo">
+                1<span class="logo-zed">ZED</span>
+                <span class="logo-techfix">TechFix</span>
+            </a>
+
+            <div class="nav-actions">
+                <a href="my-bookings.html" class="btn btn-outline">
+                    My Bookings
+                </a>
+
+                <button type="button" id="logoutButton" class="btn btn-primary">
+                    Logout
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="dashboard-page">
+
+        <section class="dashboard-container">
+
+            <!-- Page Heading -->
+            <div class="dashboard-welcome">
+
+                <span class="dashboard-badge">
+                    Booking Details
+                </span>
+
+                <h1>
+                    Repair Booking
+                </h1>
+
+                <p>
+                    View the details and progress of your repair request.
+                </p>
+
+            </div>
+
+
+            <!-- Booking Details -->
+            <section class="dashboard-section">
+
+                <div class="dashboard-section-heading">
+                    <div>
+
+                        <span class="dashboard-badge">
+                            Booking Information
+                        </span>
+
+                        <h2>
+                            Your Repair
+                        </h2>
+
+                    </div>
+                </div>
+
+
+                <!-- Details will be loaded here -->
+                <div id="bookingDetails">
+
+                    <div class="empty-bookings">
+
+                        <div class="empty-icon">
+                            📋
+                        </div>
+
+                        <h3>
+                            Loading booking...
+                        </h3>
+
+                        <p>
+                            Please wait while we load your booking details.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/bookingDetails.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book a Repair | 1ZED TechFix</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="customer-dashboard.html" class="logo">
+                1<span class="logo-zed">ZED</span>
+                <span class="logo-techfix">TechFix</span>
+            </a>
+
+            <div class="nav-actions">
+
+                <a
+                    href="customer-dashboard.html"
+                    class="btn btn-primary"
+                >
+                    Dashboard
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         BOOKING SECTION
+    ========================================== -->
+
+    <main class="auth-page">
+
+        <div class="auth-container">
+
+            <!-- =====================================
+                 LEFT INFORMATION
+            ====================================== -->
+
+            <section class="auth-info">
+
+                <div class="auth-info-content">
+
+                    <span class="auth-badge">
+                        Repair Booking
+                    </span>
+
+                    <h1>
+                        Book a
+                        <span>Technician</span>
+                    </h1>
+
+                    <p>
+                        Tell us about your device and the problem
+                        you're experiencing. A technician will review
+                        your request and assist you.
+                    </p>
+
+
+                    <div class="auth-features">
+
+                        <div class="auth-feature">
+
+                            <div class="feature-icon">
+                                🔧
+                            </div>
+
+                            <div>
+                                <h3>Professional Support</h3>
+
+                                <p>
+                                    Get help from a qualified technician.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="auth-feature">
+
+                            <div class="feature-icon">
+                                📅
+                            </div>
+
+                            <div>
+                                <h3>Choose Your Time</h3>
+
+                                <p>
+                                    Select your preferred service date
+                                    and time.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="auth-feature">
+
+                            <div class="feature-icon">
+                                📷
+                            </div>
+
+                            <div>
+                                <h3>Add Device Photos</h3>
+
+                                <p>
+                                    Upload photos to help explain the
+                                    problem.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================
+                 BOOKING FORM
+            ====================================== -->
+
+            <section class="auth-card">
+
+                <div class="auth-card-heading">
+
+                    <div class="auth-icon">
+                        🔧
+                    </div>
+
+                    <h2>Book a Repair</h2>
+
+                    <p>
+                        Enter your device and service details
+                    </p>
+
+                </div>
+
+
+                <form
+                    id="bookingForm"
+                    class="auth-form"
+                    enctype="multipart/form-data"
+                >
+
+                    <!-- Device Type -->
+
+                    <div class="form-group">
+
+                        <label for="deviceType">
+                            Device Type
+                        </label>
+
+                        <select
+                            id="deviceType"
+                            name="deviceType"
+                            required
+                        >
+                            <option value="">
+                                Select device type
+                            </option>
+
+                            <option value="Laptop">
+                                Laptop
+                            </option>
+
+                            <option value="Desktop Computer">
+                                Desktop Computer
+                            </option>
+
+                            <option value="Smart TV">
+                                Smart TV
+                            </option>
+
+                            <option value="Printer">
+                                Printer
+                            </option>
+
+                            <option value="Router">
+                                Router
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Device Brand -->
+
+                    <div class="form-group">
+
+                        <label for="deviceBrand">
+                            Device Brand
+                        </label>
+
+                        <input
+                            type="text"
+                            id="deviceBrand"
+                            name="deviceBrand"
+                            placeholder="e.g. HP, Dell, Samsung"
+                            
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Problem Description -->
+
+                    <div class="form-group">
+
+                        <label for="problemDescription">
+                            Problem Description
+                        </label>
+
+                        <textarea
+                            id="problemDescription"
+                            name="problemDescription"
+                            rows="5"
+                            placeholder="Describe the problem with your device..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!--customer's repair mode-->
+
+                    <div class="form-group">
+
+                        <label for="repairMode">
+                            Repair Mode
+                        </label>
+
+                        <select
+                            id="repairMode"
+                            name="repairMode"
+                            required
+                        >
+                             
+                            <option value="">
+                                Select repair mode
+                            </option>
+
+                            <option value="On-site Repair">
+                                On-site Repair — Technician comes to you
+                            </option>
+
+                            <option value="Drop-off Repair">
+                                Drop-off Repair — Bring your device to us
+                            </option>
+
+                            <option value="Remote Support">
+                                Remote Support — Get help remotely
+                            </option>
+                        </select>
+
+                    </div>
+                
+
+                    <!-- =========================================
+                         REPAIR LOCATION
+                    ========================================== -->
+
+                    <div
+                        class="form-group"
+                        id="repairLocationGroup"
+                        hidden
+                    >
+
+                        <label for="serviceAddress">
+                            Service Address
+                        </label>
+
+                        <textarea
+                            id="serviceAddress"
+                            name="serviceAddress"
+                            rows="3"
+                            placeholder="Enter the address where the technician should come..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- DROP-OFF LOCATION -->
+
+                    <div
+                        class="form-group"
+                        id="dropOffLocation"
+                        hidden
+                    >
+
+                        <label>
+                            Drop-off Location
+                        </label>
+
+                        <div class="location-card">
+
+                            <div class="location-icon">
+                                🏫
+                            </div>
+
+                            <div class="location-content">
+
+                                <h3>
+                                    1ZED TechFix Service Centre
+                                </h3>
+
+                                <p>
+                                    Northern Technical College (NORTEC)
+                                </p>
+
+                                <p>
+                                    Chela Road, Kansenshi
+                                    <br>
+                                    Ndola, Zambia
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                            
+       
+
+                    <!-- Preferred Date -->
+
+                    <div class="form-group">
+
+                        <label for="preferredDate">
+                            Preferred Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="preferredDate"
+                            name="preferredDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Preferred Time -->
+
+                    <div class="form-group">
+
+                        <label for="preferredTime">
+                            Preferred Time
+                        </label>
+
+                        <input
+                            type="time"
+                            id="preferredTime"
+                            name="preferredTime"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Device Photos -->
+
+                    <div class="form-group">
+
+                        <label for="photos">
+                            Device Photos
+                        </label>
+
+                        <input
+                            type="file"
+                            id="photos"
+                            name="photos"
+                            accept="image/*"
+                            multiple
+                        >
+
+                        <small>
+                            You can upload up to 5 images.
+                            Maximum 5MB per image.
+                        </small>
+
+                    </div>
+
+
+                    <!-- Message -->
+
+                    <div
+                        id="bookingMessage"
+                        class="form-message"
+                        hidden
+                    ></div>
+
+
+                    <!-- Submit -->
+
+                    <button
+                        type="submit"
+                        id="bookingButton"
+                        class="btn btn-primary auth-submit"
+                    >
+                        Submit Booking
+                    </button>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../js/bookRepair.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,691 @@
+/* =====================================================
+   1ZED TECHFIX
+   Authentication Pages
+===================================================== */
+
+
+/* =====================================================
+   AUTH NAVIGATION
+===================================================== */
+
+.auth-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.auth-nav span {
+    color: #8f9daf;
+    font-size: 0.82rem;
+}
+
+
+/* =====================================================
+   AUTH PAGE
+===================================================== */
+
+.auth-page {
+    min-height: calc(100vh - 84px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 70px 7%;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Background glow */
+
+.auth-page::before {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    left: -180px;
+    top: 10%;
+
+    background: rgba(102, 217, 255, 0.07);
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    pointer-events: none;
+}
+
+.auth-page::after {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    right: -150px;
+    bottom: -150px;
+
+    background: rgba(34, 197, 94, 0.05);
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   AUTH CONTAINER
+===================================================== */
+
+.auth-container {
+    width: 100%;
+    max-width: 1100px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 0.85fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   INFORMATION PANEL
+===================================================== */
+
+.auth-info {
+    padding: 20px 0;
+}
+
+.auth-info-content {
+    max-width: 540px;
+}
+
+.auth-info h1 {
+    margin: 22px 0 20px;
+
+    font-size: clamp(2.5rem, 5vw, 4.3rem);
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+}
+
+.auth-info h1 span {
+    display: block;
+
+    color: #66d9ff;
+}
+
+.auth-info > p,
+.auth-info-content > p {
+    color: #9eacbd;
+
+    font-size: 0.98rem;
+
+    max-width: 500px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =====================================================
+   AUTH FEATURES
+===================================================== */
+
+.auth-features {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.auth-feature {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+}
+
+.feature-icon {
+    flex-shrink: 0;
+
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background: rgba(102, 217, 255, 0.08);
+
+    border: 1px solid rgba(102, 217, 255, 0.08);
+
+    font-size: 1.1rem;
+}
+
+.auth-feature h3 {
+    margin-bottom: 3px;
+
+    font-size: 0.9rem;
+}
+
+.auth-feature p {
+    color: #7f8da0;
+
+    font-size: 0.78rem;
+}
+
+
+/* =====================================================
+   AUTH CARD
+===================================================== */
+
+.auth-card {
+    width: 100%;
+
+    padding: 40px;
+
+    border-radius: 24px;
+
+    background: rgba(20, 32, 49, 0.82);
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+
+/* =====================================================
+   AUTH CARD HEADING
+===================================================== */
+
+.auth-card-heading {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.auth-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    border-radius: 16px;
+
+    background: rgba(102, 217, 255, 0.08);
+
+    border: 1px solid rgba(102, 217, 255, 0.08);
+
+    font-size: 1.4rem;
+}
+
+.auth-card-heading h2 {
+    font-size: 1.7rem;
+
+    margin-bottom: 5px;
+}
+
+.auth-card-heading p {
+    color: #8290a2;
+
+    font-size: 0.82rem;
+}
+
+/* ===================================================== 
+    FORM 
+===================================================== */ 
+
+.auth-form { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 17px; 
+} 
+    
+.form-group { display: flex; 
+    flex-direction: column; 
+    gap: 7px; 
+
+} .form-group label { 
+    color: #d6dce5; 
+    font-size: 0.8rem; 
+    font-weight: 600;
+} .form-group input { 
+    width: 100%; 
+    padding: 13px 15px; 
+    border-radius: 10px; 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    outline: none; 
+    background: rgba(5, 14, 27, 0.55); 
+    color: #ffffff; 
+    font-family: inherit; 
+    font-size: 0.85rem; 
+    transition: 0.3s ease; 
+} 
+
+.form-group input::placeholder { 
+    color: #58677a; 
+} 
+
+.form-group input:focus { 
+    border-color: rgba(102, 217, 255, 0.55); 
+    background: rgba(5, 14, 27, 0.75); 
+    box-shadow: 0 0 0 3px rgba(102, 217, 255, 0.06); 
+}
+
+
+
+/* Keep browser autofill consistent with the form style */
+.form-group input:-webkit-autofill,
+.form-group input:-webkit-autofill:hover,
+.form-group input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #ffffff;
+
+    -webkit-box-shadow:
+        0 0 0px 1000px rgba(5, 14, 27, 0.55) inset;
+
+    transition:
+        background-color 5000s ease-in-out 0s;
+}
+
+/* =====================================================
+   FORM MESSAGE
+===================================================== */
+
+.form-message {
+    display: block;
+
+    padding: 10px 12px;
+
+    border-radius: 8px;
+
+    font-size: 0.78rem;
+
+    line-height: 1.5;
+}
+
+.form-message.error {
+    display: block;
+
+    color: #ffb4b4;
+
+    background: rgba(255, 70, 70, 0.08);
+
+    border: 1px solid rgba(255, 70, 70, 0.15);
+}
+
+.form-message.success {
+    display: block;
+
+    color: #9ff0bb;
+
+    background: rgba(34, 197, 94, 0.08);
+
+    border: 1px solid rgba(34, 197, 94, 0.15);
+}
+
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
+
+.auth-submit {
+    width: 100%;
+
+    margin-top: 5px;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+.auth-submit:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* =====================================================
+   AUTH FOOTER
+===================================================== */
+
+.auth-footer {
+    text-align: center;
+
+    margin-top: 22px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.auth-footer p {
+    color: #7f8da0;
+
+    font-size: 0.78rem;
+}
+
+.auth-footer a {
+    color: #66d9ff;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.auth-footer a:hover {
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .auth-container {
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+        gap: 30px;
+    }
+
+    .auth-info {
+        text-align: center;
+    }
+
+    .auth-info-content {
+        max-width: 600px;
+    }
+
+    .auth-info > p,
+    .auth-info-content > p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .auth-features {
+        text-align: left;
+    }
+
+    .auth-nav span {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .auth-page {
+        padding: 45px 5%;
+    }
+
+    .auth-card {
+        padding: 30px 22px;
+    }
+
+    .auth-info h1 {
+        font-size: 2.6rem;
+    }
+
+    .auth-info > p,
+    .auth-info-content > p {
+        font-size: 0.88rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .auth-card {
+        padding: 25px 18px;
+    }
+
+    .auth-nav .btn {
+        padding: 10px 15px;
+
+        font-size: 0.75rem;
+    }
+
+    .auth-info h1 {
+        font-size: 2.25rem;
+    }
+}
+
+/* =====================================================
+   PASSWORD VISIBILITY TOGGLE
+===================================================== */
+
+.password-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.password-wrapper input {
+    padding-right: 50px;
+}
+
+.password-toggle {
+    position: absolute;
+
+    right: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border: none;
+
+    background: transparent;
+
+    color: #8f9daf;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+    padding: 5px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: #66d9ff;
+
+    transform:
+        translateY(-50%)
+        scale(1.08);
+}
+
+/* =========================================
+   REPAIR MODE SELECT
+========================================= */
+
+.auth-form select {
+    width: 100%;
+    padding: 14px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+
+    font-size: 0.95rem;
+    font-family: inherit;
+
+    outline: none;
+    cursor: pointer;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Placeholder option */
+
+.auth-form select:invalid {
+    color: #8f9daf;
+}
+
+/* Focus effect */
+
+.auth-form select:focus {
+    border-color: #66d9ff;
+    background: rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 0 0 3px rgba(102, 217, 255, 0.10),
+        0 0 20px rgba(102, 217, 255, 0.08);
+}
+
+/* Dropdown options */
+
+.auth-form select option {
+    background: #111827;
+    color: #ffffff;
+}
+
+/* =========================================
+   PROBLEM DESCRIPTION
+========================================= */
+
+.auth-form textarea {
+    width: 100%;
+    min-height: 140px;
+
+    padding: 14px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+
+    font-size: 0.95rem;
+    font-family: inherit;
+    line-height: 1.6;
+
+    outline: none;
+    resize: vertical;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Placeholder */
+
+.auth-form textarea::placeholder {
+    color: #8f9daf;
+}
+
+/* Focus effect */
+
+.auth-form textarea:focus {
+    border-color: #66d9ff;
+    background: rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 0 0 3px rgba(102, 217, 255, 0.10),
+        0 0 20px rgba(102, 217, 255, 0.08);
+}
+
+/* =========================================
+   REPAIR LOCATION CARD
+========================================= */
+
+.location-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    padding: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.location-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 12px;
+
+    background: rgba(102, 217, 255, 0.10);
+
+    font-size: 1.3rem;
+}
+
+.location-content h3 {
+    margin: 0 0 6px;
+
+    color: #ffffff;
+
+    font-size: 1rem;
+}
+
+.location-content p {
+    margin: 3px 0;
+
+    color: #8f9daf;
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* =========================================
+   HIDDEN FORM SECTIONS
+========================================= */
+
+[hidden] {
+    display: none !important;
+}

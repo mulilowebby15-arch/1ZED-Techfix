@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Create Account | 1ZED TechFix</title>
+
+    <!-- Main website styles -->
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <!-- Authentication page styles -->
+    <link
+        rel="stylesheet"
+        href="../css/auth.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         AUTH NAVIGATION
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+                1<span class="logo-zed">ZED</span>
+                <span class="logo-techfix">TechFix</span>
+            </a>
+
+
+            <div class="auth-nav">
+
+                <span>
+                    Already have an account?
+                </span>
+
+                <a
+                    href="login.html"
+                    class="btn btn-primary"
+                >
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         REGISTRATION PAGE
+    ========================================== -->
+
+    <main class="auth-page">
+
+        <div class="auth-container">
+
+
+            <!-- =====================================
+                 INFORMATION PANEL
+            ====================================== -->
+
+            <section class="auth-info">
+
+                <div class="auth-info-content">
+
+                    <div class="section-tag">
+                        1ZED TECHFIX
+                    </div>
+
+                    <h1>
+                        Your Tech.
+                        <span>Our Expertise.</span>
+                    </h1>
+
+                    <p>
+                        Create your account and get access
+                        to reliable IT repair and support
+                        services from 1ZED TechFix.
+                    </p>
+
+
+                    <div class="auth-features">
+
+
+                        <div class="auth-feature">
+
+                            <div class="feature-icon">
+                                🛠️
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Professional IT Support
+                                </h3>
+
+                                <p>
+                                    Get reliable technical
+                                    assistance for your devices.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="auth-feature">
+
+                            <div class="feature-icon">
+                                📅
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Easy Booking
+                                </h3>
+
+                                <p>
+                                    Book a technician at a time
+                                    that works for you.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="auth-feature">
+
+                            <div class="feature-icon">
+                                🔒
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Secure Account
+                                </h3>
+
+                                <p>
+                                    Your account information is
+                                    securely protected.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 REGISTRATION CARD
+            ====================================== -->
+
+            <section class="auth-card">
+
+
+                <!-- CARD HEADING -->
+
+                <div class="auth-card-heading">
+
+                    <div class="auth-icon">
+                        👤
+                    </div>
+
+                    <h2>
+                        Create Your Account
+                    </h2>
+
+                    <p>
+                        Fill in your details to get started.
+                    </p>
+
+                </div>
+
+
+
+                <!-- REGISTRATION FORM -->
+
+                <form
+                    id="registerForm"
+                    class="auth-form"
+                >
+
+
+                    <!-- FULL NAME -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            autocomplete="name"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            autocomplete="tel"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="password"
+                                aria-label="Show password"
+                            >
+                                👁️
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <div class="password-wrapper">
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="confirmPassword"
+                                aria-label="Show password"
+                            >
+                                👁️
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <div
+                        id="registerMessage"
+                        class="form-message"
+                        hidden
+                    ></div>
+
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        id="registerButton"
+                        class="btn btn-primary auth-submit"
+                    >
+                        Create Account
+                    </button>
+
+                </form>
+
+
+
+                <!-- FOOTER -->
+
+                <div class="auth-footer">
+
+                    <p>
+
+                        Already have an account?
+
+                        <a href="login.html">
+                            Login here
+                        </a>
+
+                    </p>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- REGISTRATION JAVASCRIPT -->
+
+    <script src="../js/register.js"></script>
+
+</body>
+
+</html>

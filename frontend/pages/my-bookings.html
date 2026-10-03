@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Bookings | 1ZED TechFix</title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a
+                href="customer-dashboard.html"
+                class="logo"
+            >
+                1<span class="logo-zed">ZED</span>
+                <span class="logo-techfix">TechFix</span>
+            </a>
+
+
+            <div class="nav-actions">
+
+                <a
+                    href="customer-dashboard.html"
+                    class="btn btn-outline"
+                >
+                    Dashboard
+                </a>
+
+                <button
+                    type="button"
+                    id="logoutButton"
+                    class="btn btn-primary"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         MY BOOKINGS
+    ========================================== -->
+
+    <main class="dashboard-page">
+
+        <section class="dashboard-container">
+
+            <!-- Page Heading -->
+
+            <div class="dashboard-welcome">
+
+                <span class="dashboard-badge">
+                    My Bookings
+                </span>
+
+                <h1>
+                    Your Repair Bookings
+                </h1>
+
+                <p>
+                    View and track all your device repair
+                    requests in one place.
+                </p>
+
+            </div>
+
+
+            <!-- Bookings Section -->
+
+            <section class="dashboard-section">
+
+                <div class="dashboard-section-heading">
+
+                    <div>
+
+                        <span class="dashboard-badge">
+                            Booking History
+                        </span>
+
+                        <h2>
+                            All Bookings
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="allBookings"
+                    class="recent-bookings"
+                >
+
+                    <div class="empty-bookings">
+
+                        <div class="empty-icon">
+                            📋
+                        </div>
+
+                        <h3>
+                            Loading bookings...
+                        </h3>
+
+                        <p>
+                            Please wait while we load your bookings.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="../js/myBookings.js"></script>
+
+</body>
+
+</html>
