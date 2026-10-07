@@ -182,7 +182,7 @@ const loadAllBookings = async () => {
                 "btn btn-outline hide-booking-button";
 
             hideButton.textContent =
-                "Conceal Booking";
+                "Concel Booking";
 
 
             hideButton.addEventListener("click", async (event) => {
