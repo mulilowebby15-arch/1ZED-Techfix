@@ -19,7 +19,7 @@ const loadTechnicians = async () => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/admin/technicians",
+            "https://onezed-techfix-api.onrender.com/api/admin/technicians",
             {
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -62,7 +62,7 @@ const loadAdminSummary = async () => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/admin/summary",
+            "https://onezed-techfix-api.onrender.com/api/admin/summary",
             {
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -112,7 +112,7 @@ const confirmBooking = async (bookingId) => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/admin/booking-status",
+            "https://onezed-techfix-api.onrender.com/api/admin/booking-status",
             {
                 method: "PUT",
 
@@ -179,7 +179,7 @@ const rejectBooking = async (bookingId) => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/admin/booking-status",
+            "https://onezed-techfix-api.onrender.com/api/admin/booking-status",
             {
                 method: "PUT",
 
@@ -242,7 +242,7 @@ const assignTechnician = async (
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/admin/assign-technician",
+            "https://onezed-techfix-api.onrender.com/api/admin/assign-technician",
             {
                 method: "PUT",
 
@@ -304,7 +304,7 @@ const loadAdminBookings = async () => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/admin/bookings",
+            "https://onezed-techfix-api.onrender.com/api/admin/bookings",
             {
                 headers: {
                     Authorization: `Bearer ${token}`

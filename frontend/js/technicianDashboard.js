@@ -19,7 +19,7 @@ const loadAssignedBookings = async () => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/technicians/bookings",
+            "https://onezed-techfix-api.onrender.com/api/technicians/bookings",
             {
                 method: "GET",
 

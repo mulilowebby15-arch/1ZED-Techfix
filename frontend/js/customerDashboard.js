@@ -19,7 +19,7 @@ const loadRecentBookings = async () => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/bookings/my-bookings",
+            "https://onezed-techfix-api.onrender.com/api/bookings/my-bookings",
             {
                 method: "GET",
 
@@ -216,7 +216,7 @@ if (trackRepairButton) {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/bookings/my-bookings",
+                "https://onezed-techfix-api.onrender.com/api/bookings/my-bookings",
                 {
                     method: "GET",
 

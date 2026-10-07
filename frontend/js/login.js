@@ -98,7 +98,7 @@ loginForm.addEventListener("submit", async (event) => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/users/login",
+            "https://onezed-techfix-api.onrender.com/api/users/login",
             {
                 method: "POST",
 

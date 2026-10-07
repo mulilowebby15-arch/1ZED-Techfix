@@ -81,7 +81,7 @@ const loadBookingDetails = async () => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/technicians/bookings",
+            "https://onezed-techfix-api.onrender.com/api/technicians/bookings",
             {
                 method: "GET",
 
@@ -427,7 +427,7 @@ const startRepair = async () => {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/technicians/bookings/${bookingId}/status`,
+            `https://onezed-techfix-api.onrender.com/api/technicians/bookings/${bookingId}/status`,
             {
                 method: "PUT",
 
@@ -509,7 +509,7 @@ const markAwaitingParts = async () => {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/technicians/bookings/${bookingId}/status`,
+            `https://onezed-techfix-api.onrender.com/api/technicians/bookings/${bookingId}/status`,
             {
                 method: "PUT",
 
@@ -591,7 +591,7 @@ const resumeRepair = async () => {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/technicians/bookings/${bookingId}/status`,
+            `https://onezed-techfix-api.onrender.com/api/technicians/bookings/${bookingId}/status`,
             {
                 method: "PUT",
 
@@ -702,7 +702,7 @@ const completeRepair = async () => {
     try {
 
         const response = await fetch(
-            `http://localhost:5000/api/technicians/bookings/${bookingId}/status`,
+            `https://onezed-techfix-api.onrender.com/api/technicians/bookings/${bookingId}/status`,
             {
                 method: "PUT",
 
@@ -817,7 +817,7 @@ if (repairInformationForm) {
             try {
 
                 const response = await fetch(
-                    `http://localhost:5000/api/technicians/bookings/${bookingId}/repair`,
+                    `https://onezed-techfix-api.onrender.com/api/technicians/bookings/${bookingId}/repair`,
                     {
                         method: "PUT",
 

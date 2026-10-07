@@ -55,7 +55,7 @@ const loadBookingDetails = async () => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/admin/bookings",
+            "https://onezed-techfix-api.onrender.com/api/admin/bookings",
             {
                 method: "GET",
 

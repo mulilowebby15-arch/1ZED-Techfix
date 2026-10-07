@@ -255,7 +255,7 @@ bookingForm.addEventListener("submit", async (event) => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/bookings",
+            "https://onezed-techfix-api.onrender.com/api/bookings",
             {
                 method: "POST",
 

@@ -180,7 +180,7 @@ registerForm.addEventListener(
             ========================================== */
 
             const response = await fetch(
-                "http://localhost:5000/api/users/register",
+                "https://onezed-techfix-api.onrender.com/api/users/register",
                 {
                     method: "POST",
 

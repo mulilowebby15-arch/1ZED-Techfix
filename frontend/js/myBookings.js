@@ -22,7 +22,7 @@ const loadAllBookings = async () => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/bookings/my-bookings",
+            "https://onezed-techfix-api.onrender.com/api/bookings/my-bookings",
             {
                 method: "GET",
 
@@ -206,7 +206,7 @@ const loadAllBookings = async () => {
 
                     const response =
                         await fetch(
-                            `http://localhost:5000/api/bookings/${booking._id}/hide`,
+                            `https://onezed-techfix-api.onrender.com/api/bookings/${booking._id}/hide`,
                             {
                                 method: "PATCH",
 
